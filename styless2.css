@@ -1,0 +1,39 @@
+.navbar-inverse {
+    background-color: transparent; /* Removes background color */
+    border: none; /* Removes the bottom border */
+    
+}
+.navbar-brand{
+    font-family: 'Dune Rise', sans-serif;
+     font-size: 25px; /* Increase font size as needed */
+    /* white-space: nowrap; */
+    padding-top: 25px;
+} 
+
+.navbar-nav > li > a {
+    font-size: 20px; /* Increase font size as needed */
+    white-space: nowrap; /* Prevent links from wrapping */
+}
+
+/* Align the nav links to the right */
+.navbar-nav {
+    float: right; /* Aligns the nav items to the right */
+}
+
+h1{
+    text-align: center;
+    padding-top: 200px;
+    font-family: 'Dune Rise', sans-serif;
+    font-size: 35px;
+    color: lightgrey;
+    line-height: 1.5em;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 1.5); 
+} 
+
+body{
+    background-image: url("/Sources/images/space.webp");
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed;
+}

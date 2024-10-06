@@ -1,0 +1,156 @@
+h1 {
+    font-family: 'Dune Rise', sans-serif;
+    font-size: 3em;
+    margin-block: 40px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+svg {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+text {
+    text-align: center;
+    font-family: 'Dune Rise', sans-serif;
+    font-size: 70px;
+    fill: #ffffff; /* White color */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Adds a shadow effect */
+}
+body {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('/Sources/images/astro.webp');
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(197, 220, 239);
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row; /* Align boxes in a column */
+    align-items: center; /* Center the boxes horizontally */
+    padding: 60px;
+    margin-top: 150px;
+    gap: 25px; /* Space between boxes */
+    position: absolute;
+    top: 15%;
+    right: 22%;
+}
+
+.member {
+    background-color:rgba(7, 4, 56, 0.316);
+    border: 1px solid rgba(0, 204, 255, 0.5);
+    border-radius: 20px;
+    padding: 40px;
+    min-width: 250px;
+    max-height: 350px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+    height: 400px; /* Set a fixed height for all members */
+}
+
+.member:hover {
+    transform: scale(1.05);
+}
+
+.member img {
+    width: 130px; /* Adjust as needed */
+    height: 130px; /* Adjust as needed */
+    border-radius: 50%;
+    object-fit: cover;
+    opacity: 0.9;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+
+h2 {
+    color: rgb(197, 220, 239) !important; /* Fixed placement of !important */
+    font-size: 1.5em;
+    line-height: 15px;
+    margin-bottom: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p {
+    color: rgb(143, 184, 217);
+    font-size: 1em;
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+#myNavbar{
+    display: flex;
+    float: right; /* Aligns the nav items to the right */
+    list-style-type: none;  /* Remove the bullets */
+            /* Align items in a row */
+    justify-content: space-around; 
+    padding: 0;             /* Remove default padding */
+    margin: 0;    
+  
+}
+.navbar-brand{
+
+    float: left;
+    text-decoration: none;
+        font-family: 'Dune Rise', sans-serif;
+         font-size: 25px; /* Increase font size as needed */
+        /* white-space: nowrap; */
+        padding-top: 25px;
+        color:white;
+        text-shadow: rgba(0, 0, 0, 5);
+    } 
+
+
+
+.navbar-nav > li > a {
+    padding-right: 15px;
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 20px; /* Optional: Add space between items */
+}
+.navbar-nav .dropdown-content {
+    position: relative; /* This is necessary for positioning the dropdown */
+}
+
+.navbar-nav .dropdown-menu {
+    display: none; /* Initially hide the dropdown */
+    position: absolute; /* Make the dropdown float below the parent */
+    top: 100%; /* Position it directly below the parent */
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background */
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+    z-index: 1000; /* Ensure dropdown is on top */
+}
+
+/* Styling dropdown menu items */
+ .navbar-nav .dropdown-menu li a {
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    display: block;
+} 
+
+/* Hover effects for dropdown */
+.navbar-nav .dropdown-menu li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Show the dropdown on hover */
+.navbar-nav .dropdown:hover .dropdown-menu {
+    display: block; /* Show dropdown when parent is hovered */
+}
+
+/* Remove bullet points from the dropdown menu */
+.navbar-nav .dropdown-menu li {
+    list-style-type: none;
+}

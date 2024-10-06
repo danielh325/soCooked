@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="timeline.css">
+        <script src="timeline.js"></script>
+        <style>
+            @import url('https://fonts.cdnfonts.com/css/dune-rise');
+            </style>
+    </head>
+    
+    <!--this one is the one i did-->
+    <body>
+        <div class="logo">
+            <a style="font-family: 'Dune Rise', sans-serif;">James Webb Telescope</a>
+        </div>
+        <header>
+
+        <nav>
+            <a href="/index.html">Home</a>
+            <a href="/Team.html">Our Team</a>
+            <a href="/timeline.html">Telescope</a>
+            <a href="#">Sources</a>
+        </nav>
+        </header>
+        <div class="carousel">
+            <!-- list item -->
+            <div class="list">
+                <div class="item">
+                    <img src="/Sources/image/Page1.jpg">
+                    <div class="content">
+                        <div class="author">JAMES WEBB TELESCOPE</div>
+                        <div class="title">Carina Nebula</div>
+                        <div class="topic">SPACE ASMR</div>
+                        <div class="des">
+                            Listen to the sounds of Carina Nebula taken by James Webb Telescope in July 12, 2022. Delve into the world of sounds and harmony, extending your experience to our outer space both visually and musically.
+                            </div>
+                        <div class="buttons">
+                            <button>LISTEN</button>
+                            <button>SEE MORE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/Sources/image/Page2.webp">
+                    <div class="content">
+                        <div class="author">JAMES WEBB TELESCOPE</div>
+                        <div class="title">SMACS 0723</div>
+                        <div class="topic">SPACE SOUND</div>
+                        <div class="des">
+                            </div>
+                        <div class="buttons">
+                            <button>Listen</button>
+                            <button>SEE MORE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/Sources/image/Page3.png">
+                    <div class="content">
+                        <div class="author">JAMES WEBB TELESCOPE</div>
+                        <div class="title">STEPHAN'S QUINTET</div>
+                        <div class="topic">SPACE SOUND</div>
+                        <div class="des">
+                            </div>
+                        <div class="buttons">
+                            <button>LISTEN</button>
+                            <button>SEE MORE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/Sources/image/Page4.webp">
+                    <div class="content">
+                        <div class="author">JAMES WEBB TELESCOPE</div>
+                        <div class="title">DYING STAR</div>
+                        <div class="topic">ASMR SOUND</div>
+                        <div class="des">
+                            </div>
+                        <div class="buttons">
+                            <button>LISTEN</button>
+                            <button>SEE MORE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- list thumnail -->
+            <div class="thumbnail">
+                <div class="item">
+                    <img src="/Sources/image/Page1.jpg">
+                    <div class="content">
+                        <div class="title">
+                            Carina Nebula
+                        </div>
+                        <div class="description-small">
+                            July 12, 2022
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/Sources/image/Page2.webp">
+                    <div class="content">
+                        <div class="title">
+                            SMACS 0723
+                        </div>
+                        <div class="description-small">
+                            11 July 2022
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/Sources/image/Page3.png">
+                    <div class="content">
+                        <div class="title">
+                            STEPHAN'S QUINTET
+                        </div>
+                        <div class="description-small">
+                            July 12, 2022
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/Sources/image/Page4.webp">
+                    <div class="content">
+                        <div class="title">
+                            RING NEBULA
+                        </div>
+                        <div class="description-small">
+                            July 12, 2022
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- next prev -->
+    
+            <div class="arrows">
+                <button id="prev"><</button>
+                <button id="next">></button>
+            </div>
+            <!-- time running -->
+            <div class="time"></div>
+        </div>
+    
+    
+        
+    
+        <!---and from here is the timeline-->
+        <div class="timeline" id="TimeLine">
+
+       <!--SuperenovaEncore-->
+            <div class="container left-container">
+                <img src="/Sources/gallery/SuperenovaEncore.jpg">
+                <div class="textbox SuperenovaEncore" >
+                    <h2> Supernova Encore</h2>
+                    <small>December 21, 2021</small>
+                    <button id="listen" onclick="listenClicked1()">Listen</button>
+                    <span class="left-container-arrow"></span>
+                </div>
+            </div>
+            <div class="popups" id="SuperenovaEncore">
+                <div class="description">
+                    <h1>Superenova Encore</h1>
+                    <p>Description: Taken on 2021/12/21, this is a multiply-imaged supernova in a distant galaxy designated MRG-M0138. In the image, two instances of the supernova are circled.
+
+
+                Significance:
+                1. The image captures a rare phenomenon of gravitational lensing
+                2. This marks the first time two gravitationally lensed supernovae have been found in the same galaxy, offering insights into the dynamics of distant celestial objects.
+               
+                Background knowledge:
+                1. Supernova:
+                        Powerful and luminous stellar explosion that occurs during the final stages of a massive star's life. They play a key role in dispersing heavy elements, enriching the interstellar medium and providing the building blocks for new stars, planets, and life.
+                2. Gravitational Lensing:
+                        A phenomenon where massive objects like galaxy clusters can bend and distort light from more distant objects behind them, producing multiple distorted images of the same background object.</p>
+                    </p>
+                    <button class="close-me" onclick="close1()">Close Me</button>
+                </div>
+            </div>
+
+            <!--Carna Nebula-->
+            <div class="container right-container">
+                <img src="/Sources/image/Page1.jpg" onclick="carnaNebulaClicked()">
+                <div class="textbox carnaNebula" onclick="carnaNebulaClicked()">
+                    <h2> Carna Nebula</h2>
+                    <small>July 2022</small>
+                    <button id="listen">Listen</button>
+                    <span class="right-container-arrow"></span>
+                </div>
+            </div>
+            <div class="popups" id="carnaNebula">
+                <div class="description">
+                    <h1>Carna Nebula</h1>
+                    <p>This landscape of “mountains” and “valleys” speckled with glittering stars is actually the edge of a nearby, young, star-forming region called NGC 3324 in the Carina Nebula. It reveals for the first time previously invisible areas of star birth.
+                       <br>
+                        Background knowledge: NGC 3324 is a young star-forming region located within the Carina Nebula, a vast stellar nursery in the southern sky. It's known for its active star formation. The Hubble Space Telescope observed a western section of NGC 3324 in detail, and the same section was one of the first observations of the James Webb Space Telescope
+                        <br>
+                        Significance: As one of the very first images released by the James Webb Telescope, the image unveils previously invisible areas of star birth within NGC 3324, providing insights into how stars form within cosmic dust and gas clouds.
+                        </p>
+                    <button onclick="close1()">Close Me</button>
+                </div>
+            </div>
+
+
+
+            <!--Heart of Milky Way-->
+            <div class="container left-container">
+                <img src="/Sources/gallery/HeartofMilkyWay.jpg" onclick=HeartofMilkyWayClicked()>
+                <div class="textbox HeartofMilkyWay" onclick=HeartofMilkyWayClicked()>
+                    <h2>The Heart of Milky Way</h2>
+                    <small> November 20, 2023</small>
+                    <button id="listen" onclick="listenClicked4()">Listen</button>
+                    <span class="left-container-arrow"></span>
+                </div>
+            </div>
+            
+            <div class="popups" id="HeartofMilkyWay">
+                <div class="description">
+                    <h1>Heart of milky Way</h1>
+                    <p>Description:
+            The image showcases the star-forming region Sagittarius C in the heart of the Milky Way galaxy, offering an unprecedented view of a cluster of young stars enveloped by a dusty cloud.
+           
+            Background knowledge: The Sagittarius C (Sgr C) Region is situated approximately 300 light-years away from the supermassive black hole at the center of the Milky Way.
+            It contains a cluster of young stars surrounded by dusty clouds and ionized hydrogen gas.
+           
+            Time: November 20, 2023
+           
+            Significance: The image demonstrates the intricate structures and processes involved in the birth of stars, providing insights into the formation of massive stars in extreme galactic environments.</p>
+                    <button onclick="close1()">Close Me</button>
+                </div>
+            </div>
+
+            <!--HH797-->
+            <div class="container right-container">
+                <img src="/Sources/gallery/HH797.jpg" onclick=HH797Clicked()>
+                <div class="textbox HH797" onclick=HH797Clicked()>
+                    <h2>HH797, Baby Stars</h2>
+                    <small>November 28, 2023</small>
+                    <button id="listen">Listen</button>
+                    <span class="right-container-arrow"></span>
+                </div>
+            </div>
+            <div class="popups" id="HH797">
+                <div class="description">
+
+
+               <h1>HH797</h1>
+                    <p>Description: The image showcases Herbig-Haro (HH) 797, a bright region that surrounds the new-born stars. The string like formation is composed of two baby stars ejecting nearly parallel jets of gas.
+
+
+                        Time: November 28, 2023
+                       
+                        Background Knowledge: Herbig-Haro (HH) objects are bright regions surrounding newborn stars, formed when the outflows from these young stars collide with surrounding gas and dust at high velocities. Studying them provides insights into the early stages of star formation and the interaction between young stars and their environments
+                       
+                        Significance: Astronomers used to think the “string” is only one star, but this image unveils that there are 2. In addition, by studying the interactions between young stars and their surrounding environments, astronomers can gain insights into the processes driving star formation.">
+                           </p>
+                    <button onclick="close1()">Close Me</button>
+                </div>
+            </div>
+
+            <!--Exploded Star-->
+            <div class="container left-container">
+                <img src="/Sources/gallery/ExplodedStar.jpg" onclick="explodedStarClicked()">
+                <div class="textbox ExplodedStar" onclick="explodedStarClicked()">
+                    <h2>Cas A, The Exploded Star</h2>
+                    <small> December 11, 2023</small>
+                    <button id="listen" onclick="listenClicked2()">Listen</button>   
+                    <span class="left-container-arrow"></span>
+                </div>
+            </div>
+            <div class="popups" id="explodedStar">
+                <div class="description">
+                    <h1>Exploded Star</h1>
+                    <p>This is a near-infrared view of a supernova remnant Cassiopeia A (Cas A) in high-definition. Notable features include knots of gas, holding dust and molecules which will form new stars and planets.
+
+
+                        Time: December 11, 2023
+                       
+                        Background knowledge: Cassiopeia A(Cas A) is a well-known supernova remnant located in the constellation Cassiopeia, resulting from a supernova explosion observed in the late 17th century.
+                       
+                        Significance: By studying supernova remnants like Cas A, scientists can better understand the life cycles of stars and track the dispersal of elements produced in supernova explosions</p>
+                    <button onclick="close1()">Close Me</button>
+                </div>
+            </div>
+
+
+
+
+            <!--Free-Floating Brown Dwarf Star-->
+            <div class="container right-container">
+                <img src="/Sources/gallery/Free-FloatingBrownDwarf.jpg" onclick=FreeFloatingBrownDwarfClicked()>
+                <div class="textbox Free-FloatingBrownDwarf" onclick=FreeFloatingBrownDwarfClicked()>
+                        <h2>Free-Floating BrownDwarf</h2>
+                        <small> December 13, 2023</small>
+                        <button id="listen" onclick="listenClicked3()">Listen</button>   
+                        <span class="right-container-arrow"></span>
+                </div>
+            </div>
+            <div class="popups" id="Free-FloatingBrownDwarf">
+                <div class="description">
+                    <h1>Free Floating Brown Dwarf</h1>
+                    <p>Within the star cluster IC 348, The telescope identified the smallest free-floating brown dwarf ever discovered, located approximately 1000 light-years away.
+                       
+                        Background knowledge: Brown dwarfs are intermediates between a planet and a star. Studying them helps in understanding the boundary between stars and planets the formation of planetary systems.
+                       
+                        Significance: This discovery helps us understand star formation better and adds to our knowledge of the universe's diversity.</p>
+                    <button onclick="close1()">Close Me</button>
+                </div>
+            </div>
+
+            <!--RingedPlanetUranus-->
+            <div class="container left-container">
+                <img src="/Sources/gallery/RingedPlanetUranus.jpg" onclick=RingedPlanetUranusClicked()>
+                <div class="textbox RingedPlanetUranus" onclick=RingedPlanetUranusClicked()>
+                    <h2>Ringed Planet Uranus</h2>
+                    <small>December 18, 2023</small>
+                    <button id="listen">Listen</button>
+                    <span class="left-container-arrow"></span>
+                </div>
+            </div>
+            <div class="popups" id="RingedPlanetUranus">
+                <div class="description">
+                    <h1>Ringed Planet Uranus</h1>
+                    <p>Description: This image presents a detailed view of the ice giant Uranus, showcasing its rings, moons, storms, extreme seasons, and other intriguing features. Notably, the image highlights the Zeta ring, a faint and elusive ring system surrounding the planet.
+
+
+                       
+                       
+                        Background Knowledge: As a very cold and windy planet, Uranus is the third largest planet in our solar system (About four times wider than earth) It is surrounded by 13 rings, and more than two dozen small moons as it rotates at a nearly 90-degree angle from the plane of its orbit.
+                       
+                       
+                        Significance of the Photo: The image provides valuable insights into the dynamic nature of Uranus, showcasing its rings, moons, storms, and extreme seasons with unprecedented clarity. Researchers can gain insights into the behaviors of similar exoplanets discovered in distant star systems.</p>
+                    </p>
+                    <button onclick="close1()">Close Me</button>
+                </div>
+            </div> 
+
+
+
+
+<!--Perseus-->
+            <div class="container right-container">
+                <img src="/Sources/gallery/Perseus.jpg" onclick=PerseusClicked()>
+                <div class="textbox Perseus" onclick=PerseusClicked()>
+                    <h2>Perseus</h2>
+                    <small> August 27, 2024</small>
+                    <button id="listen">Listen</button>
+                    <span class="right-container-arrow"></span>
+                </div>
+            </div>
+            <div class="popups" id="Perseus">
+                <div class="description">
+                    <h1>Perseus</h1>
+                    <p>Description: The image provides a glimpse into the star-forming region known as NGC 1333 in the Perseus constellation, revealing newborn stars, brown dwarfs, etc. It also shows young stars surrounded by gas and dust discs and the shadow of one of these discs.
+
+
+                        Time: August 27, 2024
+                        Background Knowledge: NGC 1333 is situated in the Perseus constellation and serves as a nearby hub for ongoing star formation processes. This region hosts a variety of astronomical objects, including young stars, brown dwarfs, and planetary mass bodies, offering insights into stellar birth and evolution.
+                       
+                       
+                        Significance of the Photo: The image offers a unique perspective on the ongoing star formation processes within NGC 1333, enabling scientists to unravel the mysteries of star formation and the disc structures around young starts</p>
+                    <button onclick="close1()">Close Me</button>
+                </div>
+            </div>
+
+
+            <!--Galactic Collisions-->
+            <div class="container left-container">
+                <img src="/Sources/gallery/GalacticCollisions.jpg" onclick=GalacticCollisionsClicked()>
+                <div class="textbox GalacticCollisions" onclick=GalacticCollisionsClicked()>
+                    <h2>Galactic Collisions</h2>
+                    <small> September 18, 2024</small>
+                    <button id="listen">Listen</button>
+                    <span class="left-container-arrow"></span>
+                </div>
+            </div>
+            <div class="popups" id="GalacticCollisions">
+                <div class="description">
+                    <h1>Galactic Collisions</h1>
+                    <p>galactic collision</p>
+                         The image shows Arp 107, a pair of interacting galaxies, observed through Webb's NIRCam (Near Infrared Camera). The larger galaxy displays a hazy, bright white center surrounded by a ring of gaseous filaments in varying shades of white and pink. The smaller galaxy to the left exhibits hazy white gas and dust, becoming more diffuse towards its outer regions.
+               
+                       
+                        Background Knowledge: Arp 107 refers to a pair of galaxies that are gravitationally interacting with each other, leading to unique and often visually striking features. Interacting galaxies can exhibit tidal tails, bridges, distortions, and other features due to their gravitational influence on each other.
+                       
+                       
+                        Significance of the Photo: Galactic Interactions: It showcases the effects of gravitational forces on interacting galaxies, providing astronomers with valuable data to study galaxy evolution, star formation, and the impact of interactions on cosmic structures.
+                         <button onclick="close1()">Close Me</button>
+                </div>
+            </div>
+
+
+            <!--Westerlund1-->
+            <div class="container right-container" >
+                <img src="/Sources/gallery/Westerlund1.jpg" onclick=Westerlund1Clicked()>
+                <div class="textbox Westerlund1" onclick=Westerlund1Clicked()>
+                    <h2>Westerlundv 1</h2>
+                    <small>October 4, 2024</small>
+                    <button id="listen">Listen</button>
+                    <span class="right-container-arrow"></span>
+                </div>
+            </div>
+            <div class="popups" id="Westerlund1">
+                <div class="description">
+                    <h1>Westerlund 1</h1>
+                    <p>Description: The image displays the stellar population of Westerlund 1, which is depicted as a super star cluster, one of the closest clusters of its kind, containing a large number of extremely bright stars packed densely together.
+                   
+                        Background Knowledge: Westerlund 1 Cluster is noted for being one of the most massive star clusters in our galaxy, housing a diverse population of evolved, massive stars. It’s expected to evolve into a globular cluster over time, or a densely packed collection of old stars bound together by gravity.
+                       
+                        Significance: The image offers a unique perspective on the cluster's composition and dynamics and insights about the formation and evolution of massive starts. It also serves as a remnant of past eras of star formation, providing an opportunity to investigate the universe’s early stages</p>
+                   </p>
+                    <button onclick="close1()">Close Me</button>
+                </div>
+            </div>
+           
+        </div>
+    </body>
+</html>
